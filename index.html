@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Username Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #username {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random Username Generator</h1>
+    <p> generate an epic fortnite username!!!1</p>
+    <p> (if its taken im so sorry)</p>
+    <button onclick="generateUsername()">generate your epic username</button>
+    <div id="username"></div>
+
+    <script>
+        // list of username thingies
+        var adjectives = ['gay', 'sussy', 'epic', 'sus', 'homophobic', 'cool', 'homophobic', 'fat'];
+        var nouns = ['gamer', 'rizzler', 'rizz', 'edger', 'monke', 'doge', 'sigma', 'thug', 'mod', 'kitten'];
+        var numbers = ['69', '420', '1337', '6', '2', '80082', '4', '11', '2012', '2001'];
+
+        function generateUsername() {
+            var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+            var noun = nouns[Math.floor(Math.random() * nouns.length)];
+            var number = nouns[Math.floor(Math.random() * numbers.length)];
+            var username = adjective + noun + numbers;
+
+            // Display the generated username
+            document.getElementById('username').textContent = 'Your epic fortnite username: ' + username;
+        }
+    </script>
+
+</body>
+</html>
