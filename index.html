@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fortnite username generator</title>
-    <link rel="icon" type="image/png"  href="f.png">
+    <link rel="icon" type="image/png"  href="/images/f.png">
     <style>
         body {
             font-family: "Comic Sans MS", "Comic Sans", sans-serif;
@@ -30,38 +30,11 @@
     <button onclick="generateUsername()">generate your epic username</button>
     <div id="username"></div>
 
-    <script>
-        // list of username thingies
-        var adjectives = ['gay', 'sussy', 'epic', 'sus', 'homophobic', 'cool', 'homo', 'fat', 'sexy', 'dumb', 'ohio', 'skibidi', 'cute', 'kitten', 'fortnite', 'big', 'h', 'discord', 'roblox', 'anime', 'juicy', 'hot', 'DJ', 'stupid', 'dead', 'cubic', 'hard', 'murdered', 'OG', 'sigma', 'beta', 'alpha', 'mario'];
-        var nouns = ['gamer', 'rizzler', 'stripper', 'edger', 'monke', 'doge', 'sigma', 'thug', 'mod', 'kitten', 'hacker', 'admin', 'dog', 'sweat', 'monster', 'chungus', 'h', 'cum', 'earnings', 'CASH', 'jayden', 'greg', 'gerg', 'ben', 'david', 'mike', 'liam', 'hassewawa', 'dirt', 'drake', 'mason', 'jizz'];
-        var numbers = ['69', '420', '1337', '6', '2', '8', '4', '11', '2012', '2001', '1', '2', '3', '4', '5', '7', '9', '10', '44', '23', '14', '98', '‏‏‎ ‎'];
+    <!-- Separate script for stuff -->
+    <script src="stuff.js"></script>
 
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
+    <br>
 
-        function generateUsername() {
-            // Shuffle the arrays
-            shuffleArray(adjectives);
-            shuffleArray(nouns);
-            shuffleArray(numbers);
-
-            // Take the first element from each array
-            var adjective = adjectives[0];
-            var noun = nouns[0];
-            var number = numbers[0];
-
-            var username = adjective + noun + number;
-
-            // Display the generated username
-            document.getElementById('username').textContent = 'Your epic fortnite username: ' + username;
-        }
-    </script>
-
-    <p>Press the button again for a new username you moron!</p>
-
+    <img src="/images/flossin.gif" alt="i be flossin"
 </body>
 </html>
